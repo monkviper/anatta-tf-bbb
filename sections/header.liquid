@@ -1104,6 +1104,15 @@
     font-family: var(--menu-localization-font);
     font-size: var(--menu-localization-font-size);
   }
+
+  /* Figma header height overrides */
+  .header-section {
+    min-height: 108px;
+
+    @media screen and (max-width: 749px) {
+      min-height: 64px;
+    }
+  }
 {% endstylesheet %}
 
 {% unless request.design_mode %}
